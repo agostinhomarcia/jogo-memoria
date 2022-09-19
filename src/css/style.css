@@ -34,8 +34,11 @@ h1{
 
 h1, span{
     text-shadow: 2px 2px 6px black ;
+    
 }
-
+span{
+    font-size: 25px;
+}
 section{
     height: 85vh;
     width: 70%;
