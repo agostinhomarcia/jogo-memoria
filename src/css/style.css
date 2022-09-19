@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body{
+    
+    background-color: #e7c3c3;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+header{
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items:baseline;
+    background-color: rgba(183, 74, 161, 0.7);
+    color: white;
+    height: 15vh;
+    width: 49%;
+    margin: 9px auto 0;
+    padding: 5px 10px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+h1{
+    width: 100%;;
+    font-size: 2.8em;
+}
+
+h1, span{
+    text-shadow: 2px 2px 6px black ;
+}
+
+section{
+    height: 85vh;
+    width: 70%;
+    margin: auto;
+}
+
+#grid{
+    height: 95%;
+    width: 70%;
+    margin: auto;
+    padding: 8px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 8px;
+}
+
+.carta{
+    aspect-ratio: 3/4;
+    width: 93px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+}
+
+.face{
+    border: 1px solid #9f154a;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.virar{
+    transform: rotateY(180deg);
+}
+
+.front{
+    background-color: #9f154a;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+
+.back{
+    background-color:rgba(183, 74, 161, 0.7);
+    background-image:url('../img/frutas.png');
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+.acertada{
+    opacity: 0.6;
+}
