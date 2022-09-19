@@ -85,12 +85,12 @@ section{
 }
 
 .back{
-    background-color:rgba(183, 74, 161, 0.7);
-    background-image:url('../img/frutas.png');
+    background-color:#550343b3;
+    background-image:url('../img/frutas1.png');
     backface-visibility: hidden;
     border-radius: 5px;
 }
 
 .acertada{
-    opacity: 0.6;
+    opacity: 0.9;
 }
